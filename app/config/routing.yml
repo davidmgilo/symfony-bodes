@@ -1,0 +1,7 @@
+wedding:
+    resource: "@WeddingBundle/Resources/config/routing.yml"
+    prefix:   /wedding
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,36 @@
+WeddingBundle\Entity\Price:
+    type: entity
+    table: prices
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        val:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        description:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+    oneToMany:
+        wedding:
+            targetEntity: Wedding
+            mappedBy: price
+            cascade: ["persist"]
+    lifecycleCallbacks: {  }

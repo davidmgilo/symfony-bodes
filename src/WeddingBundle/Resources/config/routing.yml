@@ -1,0 +1,11 @@
+wedding_list:
+    path:     /list
+    defaults: { _controller: WeddingBundle:Default:index }
+
+wedding_prices:
+    path:     /prices
+    defaults: { _controller: WeddingBundle:Default:prices }
+ 
+wedding_menus:
+    path:     /menus
+    defaults: { _controller: WeddingBundle:Default:menus }
